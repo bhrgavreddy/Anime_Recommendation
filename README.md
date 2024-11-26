@@ -19,10 +19,10 @@ anime_with_synopsis.csv: Contains extended anime information including their syn
 Outputs:
 
 Content-Based Recommendations:
-   A list of anime with similar synopsis to the input anime.
+   A list of anime with similar synopsis to the input anime (should provide an Anime name aas input, ex: Naruto).
 
 Collaborative Recommendations:
-   A list of anime recommended based on the user's rating history.
+   A list of anime recommended based on the user's rating history(provide a user id, ex:3).
 
 Hybrid Recommendations:
    A combined recommendation list with a balance between content-based and collaborative filtering.
