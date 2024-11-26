@@ -9,6 +9,7 @@ Hybrid Recommendation.
 
 
 Files:
+
 anime.csv: Contains basic information about anime (e.g., anime_id, Name, genre).
 
 rating_complete.csv: Contains user ratings for anime (e.g., user_id, anime_id, rating).
