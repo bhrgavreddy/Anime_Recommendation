@@ -1,10 +1,10 @@
 # Anime_Recommendation
 
 Project Description
-This project implements an Anime Recommendation System using a combination of:
-Content-Based Filtering - Recommends anime based on similar content (anime synopsis).
-Collaborative Filtering - Recommends anime based on user rating patterns.
-Hybrid Recommendation - Combines content-based and collaborative methods for more robust recommendations.
+This project implements an Anime Recommendation System using :
+Content-Based Filtering.
+Collaborative Filtering.
+Hybrid Recommendation.
 
 
 Files:
