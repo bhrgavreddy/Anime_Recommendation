@@ -13,6 +13,7 @@ Files:
 anime.csv: Contains basic information about anime (e.g., anime_id, Name, genre).
 
 rating_complete.csv: Contains user ratings for anime (e.g., user_id, anime_id, rating).
+NOTE : this file data is reduced to decrease file size. original data contains 57M+ reviews.
 
 anime_with_synopsis.csv: Contains extended anime information including their synopses.
 
