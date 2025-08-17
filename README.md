@@ -1,29 +1,47 @@
-# Anime_Recommendation
+# Anime Recommendation System 🎌✨
 
-Project Description
+This project implements an **Anime Recommendation System** using the following techniques:
 
-This project implements an Anime Recommendation System using :
-Content-Based Filtering, 
-Collaborative Filtering, 
-Hybrid Recommendation.
+- 🎭 **Content-Based Filtering**  
+- 👥 **Collaborative Filtering**  
+- 🧬 **Hybrid Recommendation** (combining both)
 
+The system recommends anime titles either based on similarity of content or user preferences, or a combination of both.
 
-Files:
+---
 
-anime.csv: Contains basic information about anime (e.g., anime_id, Name, genre).
+## 📁 Dataset Files
 
-rating_complete.csv: Contains user ratings for anime (e.g., user_id, anime_id, rating).
-NOTE : this file data is reduced to decrease file size. original data contains 57M+ reviews.
+The following CSV files are used as input:
 
-anime_with_synopsis.csv: Contains extended anime information including their synopses.
+- **`anime.csv`**  
+  Contains basic information about anime:
+  - `anime_id`, `name`, `genre`, `type`, `episodes`, `rating`, `members`
 
-Outputs:
+- **`rating_complete.csv`**  
+  Contains user ratings for anime:
+  - `user_id`, `anime_id`, `rating`  
+  > ⚠️ *This is a reduced version for manageability. The original dataset contains over 57 million ratings.*
 
-Content-Based Recommendations:
-   A list of anime with similar synopsis to the input anime (should provide an Anime name as input, ex: Naruto).
+- **`anime_with_synopsis.csv`**  
+  Extended anime data including:
+  - `anime_id`, `name`, `genre`, `synopsis`, etc.
 
-Collaborative Recommendations:
-   A list of anime recommended based on the user's rating history(provide a user id, ex:3).
+---
 
-Hybrid Recommendations:
-   A combined recommendation list with a balance between content-based and collaborative filtering.
+## 🎯 Recommendation Outputs
+
+### 📚 1. Content-Based Filtering
+- Recommends anime with similar **synopses** to a given anime.
+- **Input:** Anime name (e.g., `"Naruto"`)
+- **Output:** Top similar anime titles based on text similarity.
+
+### 🧑‍🤝‍🧑 2. Collaborative Filtering
+- Recommends anime based on a **user’s historical ratings** using matrix factorization.
+- **Input:** `user_id` (e.g., `3`)
+- **Output:** Personalized anime suggestions.
+
+### ⚖️ 3. Hybrid Recommendation
+- Combines **content similarity** and **user preferences**.
+- Balances both techniques to output a refined list of recommendations.
+- Suitable when partial user data is available.
